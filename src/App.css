@@ -111,18 +111,12 @@ h4 {
 
 /* Change City Component */ 
 
-#changecity-fc {
-  text-align: center;
-  margin: auto;
- 
-}
-
 .icon {
   color: white;
-
 }
 
-#changecity-fc div{
+#changecity-fc{
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -132,7 +126,7 @@ h4 {
   justify-content: center;
 }
 
-#changecity-fc  div input {
+#changecity-fc input {
   color: white;
   font-family: inherit;
   font-size: 1.5rem;
@@ -145,7 +139,7 @@ h4 {
   border-radius: 2rem;
 }
 
-#changecity-fc  div input:focus {
+#changecity-fc input:focus {
   border: 2px solid rgb(83, 245, 123);
   outline: none;
 }

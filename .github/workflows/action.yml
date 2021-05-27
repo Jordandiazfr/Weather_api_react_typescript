@@ -11,7 +11,9 @@ jobs:
         run: |
           npm install
           npm run build
-
+        env:
+          REACT_APP_APIKey: ${{ secrets.REACT_APP_apiKey }}
+          REACT_APP_logoURL: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1733888a-05df-41a9-a262-4c9aa574e5fa/d51ev9w-1000ca3e-c6d5-4b81-afb2-f360f5536841.png/v1/fill/w_900,h_918,strp/troll_face_sun_by_saify02_d51ev9w-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTE4IiwicGF0aCI6IlwvZlwvMTczMzg4OGEtMDVkZi00MWE5LWEyNjItNGM5YWE1NzRlNWZhXC9kNTFldjl3LTEwMDBjYTNlLWM2ZDUtNGI4MS1hZmIyLWYzNjBmNTUzNjg0MS5wbmciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.73VUeWa9LkBXULdpmmMHeMdhBK9k2J_UVHTxe2NPhz4"
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.3
         with:
